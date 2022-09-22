@@ -1,78 +1,83 @@
-.btn{
+.btn-pink{
     @include btn;
-    &-pink{
-        @include gradiantbuton;
-        &:hover{
-            transform: scale(1.03);
-            cursor: pointer;
-            transition-duration: 400ms;
-        }
+    @include gradiantbuton;
+    &:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+        transition-duration: 400ms;
     }
-    &-fonc{
-        background-color: $color-whitegrey;
-        margin: 10px 0px 20px 0px;
-        border-radius: 10px;
-        width: 80%;
-        padding: 5px;
+}
+.btn-fonc{
+    @include btn;
+    background-color: $color-whitegrey;
+    margin: 10px 0px 20px 0px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px;
+    color: black;
+    position: relative;
+    &:hover {
+        background-color: #F5EDFF;
+        color: $color-purple;
+        transition-duration: 400ms;
+        cursor: pointer;
+        transform: scale(1.03);
+       }
+    &_text{
         color: black;
-        position: relative;
-        &:hover {
-            background-color: #F5EDFF;
-            color: $color-purple;
-            transition-duration: 400ms;
-            cursor: pointer;
-            transform: scale(1.03);
-           }
-        &_text{
-            color: black;
+    }
+}
+
+.btn-comp{
+    @include btn;
+    background-color: white;
+    margin: 10px 20px 20px 0px;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    text-align: inherit;
+}
+
+.btn-comp__menu{
+    @include btn;
+    text-align: inherit;
+    padding: 10px;
+    overflow: hidden;
+    transform: scaleX(0);
+    animation: pop .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    &-animationcheck{
+        background-color: $color-green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        transition-duration: 0.8s;
+        margin: -1rem -5rem -1rem 1rem;
+    }
+    &:hover &-animationcheck{
+        margin: -1rem -1rem -1rem 1rem;;
         }
-    }
-    &-comp{
-        background-color: white;
-        margin: 10px 20px 20px 0px;
-        border-radius: 10px;
-        padding: 20px;
-        color: black;
-        text-align: inherit;
-    }
-    &-comp__menu{
-        padding: 10px;
-        overflow: hidden;
-        transform: scaleX(0);
-        animation: pop .6s;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        animation-fill-mode: both;
-        &-animationcheck{
-            background-color: $color-green;
+        &-rotation{
+            height: 1.6rem;
+            width: 1.6rem;
+            background-color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 4rem;
-            transition-duration: 0.8s;
-            margin: -1rem -5rem -1rem 1rem;
+            border-radius: 100px;
+            transform: rotate(360deg);
+            transition-duration: 1s;
         }
-        &:hover &-animationcheck{
-            margin: -1rem -1rem -1rem 1rem;;
-            }
-            &-rotation{
-                height: 1.6rem;
-                width: 1.6rem;
-                background-color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 100px;
-                transform: rotate(360deg);
-                transition-duration: 1s;
-            }
-            &:hover &-rotation{
-                transform: rotate(0);
-            }
-    }
-    &-pink_comp{
-        width: 250px;
-        padding: 0;
-    }
+        &:hover &-rotation{
+            transform: rotate(0);
+        }
+}
+.btn-pink_comp{
+    @include btn;
+    width: 250px;
+    padding: 0;
 }
 
 .animationcheck{

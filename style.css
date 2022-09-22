@@ -384,14 +384,12 @@ html, body {
   color: white;
 }
 
-.btn {
+.btn-pink {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   border: none;
-}
-.btn-pink {
   background: linear-gradient(0deg, #9356dc, #ff79da);
   color: white;
   border-radius: 40px;
@@ -404,7 +402,13 @@ html, body {
   cursor: pointer;
   transition-duration: 400ms;
 }
+
 .btn-fonc {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border: none;
   background-color: #F6F6F6;
   margin: 10px 0px 20px 0px;
   border-radius: 10px;
@@ -423,7 +427,13 @@ html, body {
 .btn-fonc_text {
   color: black;
 }
+
 .btn-comp {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border: none;
   background-color: white;
   margin: 10px 20px 20px 0px;
   border-radius: 10px;
@@ -431,7 +441,14 @@ html, body {
   color: black;
   text-align: inherit;
 }
+
 .btn-comp__menu {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: inherit;
   padding: 10px;
   overflow: hidden;
   transform: scaleX(0);
@@ -465,7 +482,13 @@ html, body {
 .btn-comp__menu:hover .btn-comp__menu-rotation {
   transform: rotate(0);
 }
+
 .btn-pink_comp {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border: none;
   width: 250px;
   padding: 0;
 }
