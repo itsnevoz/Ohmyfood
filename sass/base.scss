@@ -242,13 +242,13 @@ html, body {
     left: 0;
     @include fullwidth;
     height: 100%;
-    background: $color-footer;
+    background: rgba(97, 97, 97, 0.9);
     position: fixed;
     @include center;
-    z-index: 1;
-    animation: endloader 0.5s;
+    animation: endloader 0.01s;
     animation-delay: 2s;
     animation-fill-mode: both;
+    z-index: 1;
 }
 .loader::after{
     content: "";
@@ -258,7 +258,6 @@ html, body {
     border-top-color: $color-purple;
     border-radius: 50%;
     animation: loading 1s infinite ease-in-out;
-    z-index: 1;
 }
 .fa-utensils{
     margin-right: 12px;
