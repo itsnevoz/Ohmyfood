@@ -1,0 +1,33 @@
+@mixin fullwidth {
+    width: 100%;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin gradiantbuton{
+    background: $color-gradiant;
+        color: white;
+        border-radius: 40px;
+        padding: 14px;
+        margin: auto;
+        width: 250px;
+}
+@mixin btn {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+    border: none;
+}
+/*color*/
+$color-grey: #EAEAEA;
+$color-whitegrey: #F6F6F6;
+$color-footer: #353535;
+$color-pink: #FF79DA;
+$color-green: #91E1CD;
+$color-purple: #9356DC;
+$color-gradiant: linear-gradient(0deg,#9356dc,#ff79da);
+
+$delay: 0.1s;

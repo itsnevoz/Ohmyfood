@@ -1,0 +1,119 @@
+.btn{
+    @include btn;
+    &-pink{
+        @include gradiantbuton;
+        &:hover{
+            transform: scale(1.03);
+            cursor: pointer;
+            transition-duration: 400ms;
+        }
+    }
+    &-fonc{
+        background-color: $color-whitegrey;
+        margin: 10px 0px 20px 0px;
+        border-radius: 10px;
+        width: 80%;
+        padding: 5px;
+        color: black;
+        position: relative;
+        &:hover {
+            background-color: #F5EDFF;
+            color: $color-purple;
+            transition-duration: 400ms;
+            cursor: pointer;
+            transform: scale(1.03);
+           }
+        &_text{
+            color: black;
+        }
+    }
+    &-comp{
+        background-color: white;
+        margin: 10px 20px 20px 0px;
+        border-radius: 10px;
+        padding: 20px;
+        color: black;
+        text-align: inherit;
+    }
+    &-comp__menu{
+        padding: 10px;
+        overflow: hidden;
+        transform: scaleX(0);
+        animation: pop .6s;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-fill-mode: both;
+        &-animationcheck{
+            background-color: $color-green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            transition-duration: 0.8s;
+            margin: -1rem -5rem -1rem 1rem;
+        }
+        &:hover &-animationcheck{
+            margin: -1rem -1rem -1rem 1rem;;
+            }
+            &-rotation{
+                height: 1.6rem;
+                width: 1.6rem;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                transform: rotate(360deg);
+                transition-duration: 1s;
+            }
+            &:hover &-rotation{
+                transform: rotate(0);
+            }
+    }
+    &-pink_comp{
+        width: 250px;
+        padding: 0;
+    }
+}
+
+.animationcheck{
+    background-color: $color-green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    transition-duration: .5s;
+    margin: -1rem -5rem -1rem 1rem;
+    &:hover{
+        margin: -1rem -1rem -1rem 1rem;;
+    }
+}
+.colorcheck{
+    color: $color-green;
+}
+.colorheart{
+    position: absolute;
+    color: transparent;
+    background: $color-gradiant;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    &:hover{
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+}
+.btnmenu{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+.greenline{
+    border-bottom: 3px solid $color-green;
+    width: 30px;
+}
+@media only screen and (min-width : 1025px){
+    .btn-fonc{
+        width: 30%;
+    }
+}

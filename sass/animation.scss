@@ -1,0 +1,57 @@
+/*key frames*/
+@keyframes pop {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes loading{
+    0% { transform: rotate(0turn);}
+    100% {transform: rotate(1turn);}
+}
+@keyframes endloader{
+    100%{opacity: 0;
+    z-index: 1;}
+}
+.delay-1{
+    animation-delay: $delay;
+    display: flex;
+}
+.delay-2{
+    animation-delay: $delay + .1;
+    display: flex;
+}
+.delay-3{
+    animation-delay: $delay + .2;
+    display: flex;
+}
+.delay-4{
+    animation-delay: $delay +.3;
+    display: flex;
+}
+.delay-5{
+    animation-delay: $delay + .4;
+    display: flex;
+}
+.delay-6{
+    animation-delay: $delay + .5;
+    display: flex;
+}
+.delay-7{
+    animation-delay: $delay + .6;
+    display: flex;
+}
+.delay-8{
+    animation-delay: $delay + .7;
+    display: flex;
+}
+.delay-9{
+    animation-delay: $delay + .8;
+    display: flex;
+}
+.delay-10{
+    animation-delay: $delay + .9;
+    display: flex;
+}
